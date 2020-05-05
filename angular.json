@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "geoUI"
+    }
+  },
+  "defaultProject": "geoUI",
+  "cli": {
+    "analytics": "fba613df-701c-498d-bd1d-5bd63cae3ded"
+  }
 }

@@ -1,0 +1,39 @@
+<div style="height: 100%;" class="bg-primary">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="card shadow-lg border-0 rounded-lg" style="margin-top: 45%;">
+                    <div class="card-header text-center">
+                        <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 font-weight-normal">Geo 🗺️ Login </h1>
+                    </div>
+                    <div class="card-body">
+                        <div style="margin-top: 1%;">
+                            <form #f="ngForm" (ngSubmit)="login(f)">
+                                <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Email</label>
+                                    <input class="form-control py-4" name="email" [class.is-invalid]="email.invalid && email.touched" required [(ngModel)]="log.email" #email="ngModel" type="text" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})$" placeholder="Enter email address"
+                                    />
+                                </div>
+                                <div class="form-group"><label class="small mb-1" for="inputPassword">Password</label>
+                                    <input class="form-control py-4" name="password" [class.is-invalid]="password.touched && password.invalid" required [(ngModel)]="log.password" #password="ngModel" type="password" minlength="5" placeholder="Enter password" /></div>
+                                <!--  <div class="form-group">
+                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" id="rememberPasswordCheck" type="checkbox" /><label class="custom-control-label" for="rememberPasswordCheck">Remember password</label></div>
+                                </div>-->
+                                <div class="form-group text-center justify-content-between mt-4 mb-0">
+
+                                    <!-- <a class="small" href="password.html">Forgot Password?</a>-->
+
+
+                                    <button type="submit" class="btn btn-primary">Ingresar</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
